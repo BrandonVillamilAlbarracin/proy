@@ -1,5 +1,5 @@
 import { Response } from "express";
-import pool from "../../../../src/config/connection/conexion"
+import pool from "../../../config/connection/conexion"
 
 class listarEstuDAO {
     protected static async listartodos(

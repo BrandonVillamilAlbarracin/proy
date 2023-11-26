@@ -1,9 +1,9 @@
 import { Response } from "express";
-import pool from "../../../../src/config/connection/conexion"
+import pool from "../../../config/connection/conexion"
 
 
 
-class eliminarEstuDAO{
+class eliminarJurDAO{
     protected static async borrarPorId(
         sqlBorrar: string,
         params: any,
@@ -14,15 +14,15 @@ class eliminarEstuDAO{
         .then((dato)=>{
             console.log(dato);
             return res.status(200).json({
-                mensaje: "Estudiante borrado",
+                mensaje: "Jurado borrado",
                 resultado: dato.rowCount
             })  
         }).catch((mierror)=>{
             console.log(mierror);
             res.status(200).json({
-                mensaje: "Eror en el estudiante borrado"
+                mensaje: "Eror en el jurado borrado"
             })
         })
     }
 }
-export default eliminarEstuDAO;
+export default eliminarJurDAO;
