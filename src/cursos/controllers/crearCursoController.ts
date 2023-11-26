@@ -5,10 +5,10 @@ import { Request,Response } from "express";
 
 class crearCursoControlador extends crearCursoDao {
 
-    public postAlcaldia(req:Request, res:Response,): void{
+    public postCurso(req:Request, res:Response,): void{
         //const sqlCrear = SQLESTUDIANTE.CREAR;
-        const {nombre, direccion, fecha_creacion, cantidad_oficinas, id_ciudad} = req.body;
-        const datos = [nombre, direccion, fecha_creacion, cantidad_oficinas, id_ciudad];
+        const {id_curso} = req.body;
+        const datos = [id_curso];
         crearCursoControlador.crearCurso(
             SQL_CURSO_CRUD.VERIFICAR,
             SQL_CURSO_CRUD.CREAR_SALON,

@@ -5,10 +5,10 @@ import { Request,Response } from "express";
 
 class crearEstuControlador extends crearEstuDao {
 
-    public postAlcaldia(req:Request, res:Response,): void{
+    public postEstudiante(req:Request, res:Response,): void{
         //const sqlCrear = SQLESTUDIANTE.CREAR;
-        const {documento, nombre, direccion, fecha_creacion, cantidad_oficinas, id_ciudad} = req.body;
-        const datos = [documento, nombre, direccion, fecha_creacion, cantidad_oficinas, id_ciudad];
+        const {documento, nombre, apellidos, voto_p, voto_r, id_curso} = req.body;
+        const datos = [documento, nombre, apellidos, voto_p, voto_r, id_curso];
         crearEstuDao.crearEstudiante(
             SQL_ESTUDIANTE_CRUD.VERIFICAR,
             SQL_ESTUDIANTE_CRUD.VOTO_ESTUDIANTE,
