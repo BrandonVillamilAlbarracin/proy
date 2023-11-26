@@ -7,8 +7,8 @@ class crearEstuControlador extends crearEstuDao {
 
     public postAlcaldia(req:Request, res:Response,): void{
         //const sqlCrear = SQLESTUDIANTE.CREAR;
-        const {nombre, direccion, fecha_creacion, cantidad_oficinas, id_ciudad} = req.body;
-        const datos = [nombre, direccion, fecha_creacion, cantidad_oficinas, id_ciudad];
+        const {documento, nombre, direccion, fecha_creacion, cantidad_oficinas, id_ciudad} = req.body;
+        const datos = [documento, nombre, direccion, fecha_creacion, cantidad_oficinas, id_ciudad];
         crearEstuDao.crearEstudiante(
             SQL_ESTUDIANTE_CRUD.VERIFICAR,
             SQL_ESTUDIANTE_CRUD.VOTO_ESTUDIANTE,
