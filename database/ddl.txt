@@ -1,0 +1,22 @@
+CREATE TABLE cursos (
+    id_curso VARCHAR(6) PRIMARY KEY unique NOT NULL 
+);
+
+CREATE TABLE jurados (
+    documento VARCHAR(30) PRIMARY KEY UNIQUE NOT NULL,
+	nombre VARCHAR(30) NOT NULL,
+	apellidos VARCHAR(30) NOT NULL,
+	id_curso varchar(6) NOT NULL
+);
+
+CREATE TABLE Estudiantes (
+    documento VARCHAR(30) PRIMARY KEY UNIQUE NOT NULL,
+	nombre VARCHAR(30) NOT NULL,
+	apellidos VARCHAR(30) NOT NULL,
+	voto_p VARCHAR(1) NOT NULL,
+	voto_r VARCHAR(1) NOT NULL,
+	id_curso varchar(6) NOT NULL
+);
+
+ALTER TABLE jurados ADD CONSTRAINT fk_jurados_cursos FOREIGN KEY (id_curso) REFERENCES cursos (id_curso);
+ALTER TABLE Estudiantes ADD CONSTRAINT fk_estudiantes_cursos FOREIGN KEY (id_curso) REFERENCES cursos (id_curso);

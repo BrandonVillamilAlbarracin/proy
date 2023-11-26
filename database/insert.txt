@@ -1,0 +1,15 @@
+INSERT INTO cursos (id_curso) VALUES ('11-1');
+INSERT INTO cursos (id_curso) VALUES ('11-2');
+INSERT INTO cursos (id_curso) VALUES ('11-3');
+
+
+INSERT INTO jurados (documento, nombre, apellidos, id_curso) VALUES ('Documento1', 'Nombre1', 'Apellidos1', '11-1');
+INSERT INTO jurados (documento, nombre, apellidos, id_curso) VALUES ('Documento2', 'Nombre2', 'Apellidos2', '11-2');
+INSERT INTO jurados (documento, nombre, apellidos, id_curso) VALUES ('Documento3', 'Nombre3', 'Apellidos3', '11-3');
+
+
+INSERT INTO Estudiantes (documento, nombre, apellidos, voto_p, voto_r, id_curso)VALUES ('Documento1', 'Nombre1', 'Apellidos1', '1', '1', '11-1');
+INSERT INTO Estudiantes (documento, nombre, apellidos, voto_p, voto_r, id_curso)VALUES ('Documento2', 'Nombre2', 'Apellidos2', '2', '1', '11-1');
+INSERT INTO Estudiantes (documento, nombre, apellidos, voto_p, voto_r, id_curso)VALUES ('Documento3', 'Nombre3', 'Apellidos3', '1', '2', '11-1');
+INSERT INTO Estudiantes (documento, nombre, apellidos, voto_p, voto_r, id_curso)VALUES ('Documento4', 'Nombre4', 'Apellidos4', '2', '1', '11-1');
+INSERT INTO Estudiantes (documento, nombre, apellidos, voto_p, voto_r, id_curso)VALUES ('Documento5', 'Nombre5', 'Apellidos5', '1', '1', '11-1');
