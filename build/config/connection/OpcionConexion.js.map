@@ -1,1 +1,1 @@
-{"version":3,"file":"OpcionConexion.js","sourceRoot":"","sources":["../../../src/config/connection/OpcionConexion.ts"],"names":[],"mappings":";;;AACA,uDAA0D;AAE7C,QAAA,UAAU,GAAmC;IACtD,OAAO,CAAC,IAAI;QACR,IAAA,iCAAe,EAAC,IAAI,CAAC,CAAC;IAC1B,CAAC;CACJ,CAAA"}
+{"version":3,"file":"OpcionConexion.js","sourceRoot":"","sources":["../../../src/config/connection/OpcionConexion.ts"],"names":[],"mappings":";;;AACA,uDAAyD;AAE5C,QAAA,UAAU,GAAoC;IACvD,OAAO,CAAC,IAAI;QACR,IAAA,iCAAe,EAAC,IAAI,CAAC,CAAC;IAE1B,CAAC;CACJ,CAAC"}

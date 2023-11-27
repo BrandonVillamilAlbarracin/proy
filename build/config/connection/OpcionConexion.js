@@ -5,6 +5,6 @@ const FuncionConexion_1 = require("./FuncionConexion");
 exports.opcionesPG = {
     receive(data) {
         (0, FuncionConexion_1.camelizeColumns)(data);
-    }
+    },
 };
 //# sourceMappingURL=OpcionConexion.js.map

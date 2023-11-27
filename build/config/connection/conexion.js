@@ -12,11 +12,11 @@ const dbname = varDB_1.default.database;
 pool
     .connect()
     .then((conn) => {
-    console.log("Conexion exitosa ", dbname);
+    console.log("Conexion exitosa", dbname);
     conn.done();
 })
     .catch((mierror) => {
-    console.log(mierror);
+    console.log(">>>", mierror);
 });
 exports.default = pool;
 //# sourceMappingURL=conexion.js.map
