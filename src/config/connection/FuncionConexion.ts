@@ -1,8 +1,6 @@
 import pgPromise from "pg-promise";
 
-
 export interface Iclient {};
-
 export function camelizeColumns(data: any){
     const tmp = data[0];
     for(const prop in tmp){
