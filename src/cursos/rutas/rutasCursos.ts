@@ -1,8 +1,7 @@
 import { Router } from "express";
 import ctrl_listar from "../controllers/CursoController";
 import ctrl_crear from "../controllers/crearCursoController";
-import ctrl_act from "../../ciudades/controllers/Controller_Actualizar";
-import ctrl_elim from "../../ciudades/controllers/Controller_Eliminar";
+import ctrl_elim from "../controllers/eliminarCursoController";
 
 class RutasCiudades {
   public rutasApi: Router;
@@ -16,10 +15,9 @@ class RutasCiudades {
   }
   public rutas() {
     
-    this.rutasApi.get("/listarTodos", ctrl_listar.listarTodo);
-    this.rutasApi.post("/crear",ctrl_crear.crear);
-    this.rutasApi.put("/actualizar/:ide",ctrl_act.actualizar);
-    this.rutasApi.delete("/eliminar/:ide",ctrl_elim.eliminar);
+    this.rutasApi.get("/listarTodos", ctrl_listar.listarTodos);
+    this.rutasApi.post("/crear",ctrl_crear.postCurso);
+    this.rutasApi.delete("/eliminar/:ide",ctrl_elim.borrarCurso);
 
     
     

@@ -17,4 +17,4 @@ class eliminarCursoControlador extends eliminarCursoDao{
 }
 
 const ctrlEliminarCurso = new eliminarCursoControlador;
-export default eliminarCursoControlador;
+export default ctrlEliminarCurso;
